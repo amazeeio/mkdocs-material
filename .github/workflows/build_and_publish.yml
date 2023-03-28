@@ -28,6 +28,9 @@ jobs:
           labels: |
             org.opencontainers.image.authors=amazee.io and squidfunk
             org.opencontainers.image.description=amazee.io downstream additions to squidfunk/mkdocs-material
+          tags: |
+            # set latest tag for default branch
+            type=raw,value=latest,enable={{is_default_branch}}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
