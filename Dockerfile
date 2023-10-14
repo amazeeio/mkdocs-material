@@ -1,4 +1,4 @@
-FROM docker.io/squidfunk/mkdocs-material:9.4.5
+FROM docker.io/squidfunk/mkdocs-material:9.4.6
 
 COPY requirements.txt .
 
